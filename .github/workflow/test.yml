@@ -1,0 +1,18 @@
+name: test
+
+on:
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+
+
+jobs:
+  test:
+    name: test
+    runs-on: self-hosted
+    steps:
+      - name: Echo
+        run: |
+          echo "Hi!!"
