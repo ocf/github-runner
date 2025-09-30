@@ -16,6 +16,7 @@ def objects():
 
     deployment = Deployment(
         name=name,
+        ports=[443]
         image=get_image_tag(name),
     )
     deployment.with_secret_env(name)
