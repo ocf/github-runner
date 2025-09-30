@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from transpire.resources import Secret, Deployment
 from transpire.types import Image
 from transpire.utils import get_image_tag
