@@ -1,4 +1,4 @@
-from transpire.resources import 
+from transpire.resources import Secret, Deployment
 from transpire.types import Image
 from transpire.utils import get_image_tag
 
