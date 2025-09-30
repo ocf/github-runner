@@ -19,7 +19,7 @@ def objects():
         ports=[443],
         image=get_image_tag(name),
     )
-    deployment.with_secret_env(name)
+    deployment.pod_spec().with_secret_env(name)
     yield deployment.build()
 
 def images():
