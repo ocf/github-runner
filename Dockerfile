@@ -6,7 +6,7 @@ ARG RUNNER_VERSION="2.328.0"
 WORKDIR /runner
 COPY start.sh .
 
-RUN apt update -y && apt install -y curl
+RUN apt update -y && apt install -y curl python3
 
 RUN curl -o actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz -L https://github.com/actions/runner/releases/download/v${RUNNER_VERSION}/actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz
 
