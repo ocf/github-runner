@@ -22,4 +22,4 @@ def objects():
     yield deployment.build()
 
 def images():
-    yield Image(name=name, path=Path("/"), registry="ghrc")
+    yield Image(name=name, path=Path("/"), registry="ghcr")
