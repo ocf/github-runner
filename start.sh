@@ -5,7 +5,7 @@ set -e
 ./config.sh \
     --unattended \
     --url https://github.com/storce/actions-runner \
-    --token ${RUNNER_TOKEN} \
+    --token $RUNNER_TOKEN \
     --replace --name ocf-github-runner
 
 # Start runner

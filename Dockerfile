@@ -1,8 +1,10 @@
 FROM theocf/debian:bookworm
 
+ENV RUNNER_TOKEN=""
 ARG RUNNER_VERSION="2.328.0"
 
 WORKDIR /runner
+COPY start.sh .
 
 RUN apt update -y && apt install -y curl
 
