@@ -1,7 +1,6 @@
 #!/bin/sh
 set -e
 
-groupadd ocf
 groupadd ocfroot
 groupadd opstaff
 groupadd ocfstaff
@@ -25,4 +24,3 @@ usermod -aG ocfstaff staff4
 
 useradd guser
 useradd sshd
-useradd staff
