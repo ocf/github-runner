@@ -26,4 +26,10 @@ USER ocf
 RUN pipx install poetry
 ENV PATH="/home/ocf/.local/bin:${PATH}"
 
+# Setup script for groups and users to accommodate some of ocflib's tests 
+COPY setup_user.sh .
+RUN chmod +x setup_user.sh
+RUN ./setup_user.sh
+
+
 CMD ["./start.sh"]
