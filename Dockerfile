@@ -31,5 +31,4 @@ RUN pipx install poetry
 ENV PATH="/home/ocf/.local/bin:${PATH}"
 
 
-# CMD ["./start.sh"]
-CMD ["while true; do sleep 360; done"]
+CMD ["./start.sh"]
