@@ -9,6 +9,7 @@ RUN apt update -y && apt install -y \
 	curl \
 	python3 \
 	pipx \
+	# For ocflib tests
 	mariadb-server \
     git
 
@@ -28,6 +29,7 @@ RUN chown -R ocf /runner
 USER ocf 
 
 # Since the server is run by a different user, we must install pipx packages under user ocf
+# We use poetry broadly for pakcage management
 RUN pipx install poetry
 ENV PATH="/home/ocf/.local/bin:${PATH}"
 
