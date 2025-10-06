@@ -5,7 +5,7 @@ set -e
 ./config.sh \
     --unattended \
     --url https://github.com/ocf/ocflib \
-    --token $RUNNER_TOKEN \
+    --pat ${GITHUB_PAT} \
     --replace --name ocf-github-runner
 
 # Start runner

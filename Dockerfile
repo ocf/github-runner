@@ -9,7 +9,8 @@ RUN apt update -y && apt install -y \
 	curl \
 	python3 \
 	pipx \
-	mariadb-server
+	mariadb-server \
+    git
 
 RUN curl -o actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz -L https://github.com/actions/runner/releases/download/v${RUNNER_VERSION}/actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz
 
