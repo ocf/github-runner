@@ -10,7 +10,7 @@ def objects():
     yield Secret(
         name=name,
         string_data={
-            "RUNNER_TOKEN": "",
+            "GITHUB_PAT": "",
         }
     ).build()
 
